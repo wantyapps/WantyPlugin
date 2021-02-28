@@ -5,7 +5,7 @@ local function version()
 end
 
 local function commandNotFound()
-	print("Command not found.")
+	print("\033[0;31mCommand not found.\033[0m")
 end
 
 function P.command(cmd)
