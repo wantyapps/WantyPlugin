@@ -5,7 +5,7 @@ local function version()
 end
 
 local function commandNotFound()
-	vim.cmd("echohl ErrorMsg|echo Command not found.|echohl none")
+	vim.cmd("echohl ErrorMsg|echo \"Command not found.\"|echohl none")
 end
 
 function P.command(cmd)
