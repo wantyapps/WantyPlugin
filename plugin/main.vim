@@ -1,1 +1,1 @@
-command! -nargs=1 Wanty lua require('plugin.plugin').command(<f-args>)
+command! -nargs=1 Wanty lua require('wantyplugin.plugin').command(<f-args>)
