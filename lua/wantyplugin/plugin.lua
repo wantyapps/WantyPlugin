@@ -16,7 +16,9 @@ function P.command(cmd)
 	if cmd == "version" then
 		print(P.version)
 	elseif cmd == "runline" then
-		runline(vim.api.nvim_exec("execute \'echo getline(\".\")\'", true))
+		-- runline(vim.api.nvim_exec("execute \'echo getline(\".\")\'", true))
+		vim.cmd("let line = getline(\".\")")
+		runline(vim.g.line)
 	else
 		commandNotFound()
 	end
