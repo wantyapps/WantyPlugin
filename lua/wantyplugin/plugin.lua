@@ -1,4 +1,4 @@
-local P = {version="1.0"}
+local P = {version="0.1.1"}
 
 -- local function version()
 -- 	print('1.0')
@@ -16,7 +16,6 @@ function P.command(cmd)
 	if cmd == "version" then
 		print(P.version)
 	elseif cmd == "runline" then
-		-- runline(vim.api.nvim_exec("execute \'echo getline(\".\")\'", true))
 		vim.cmd("let line = getline(\".\")")
 		runline(vim.g.line)
 	else
