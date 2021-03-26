@@ -1,10 +1,28 @@
 ================================================================================
 								   *WantyPlugin*
+
 WantyPlugin is a Vim/Neovim plugin written in lua.
 
 ================================================================================
-							  *WantyPlugin.commands*
+						       *WantyPlugin.subcommands*
+
 WantyPlugin's Subcommands can be run with
 
+:Wanty {subcommand}
 
-  vim:tw=78:ts=8:ft=help:norl:
+					       *WantyPlugin.subcommands.version*
+
+Will output the current WantyPlugin verison.
+Usage:
+
+:Wanty version
+
+					       *WantyPlugin.subcommands.runline*
+Will use the default shell (set with chsh) to run the line your
+cursor is on.
+
+Usage:
+
+:Wanty runline
+
+vim:tw=78:ts=8:ft=help:norl:
